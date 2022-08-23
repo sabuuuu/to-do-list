@@ -1,0 +1,137 @@
+@font-face {
+    font-family: fbold;
+    src: url(font/fbold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: fregular;
+    src: url(font/fregular.ttf);
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: fregular;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: .1fr;
+    text-align: center;
+    min-height: 100vh;
+    background-color:#191818;;
+}
+
+.projects .card {
+  margin: 25px 0 0 80px;
+  color: white;
+  background-color: #2c0101;
+  display: grid;
+  text-align: center;
+  min-height: 400px;
+  border-radius: 4px;
+}
+
+
+.form-heading {
+    background-color:#2c0101;
+    color: white;
+}
+
+
+.todos-heading {
+    background-color: #2c0101;
+    color: white;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column: 2 / 3;
+    gap: 15px;
+    padding: 15px;
+    justify-content: center;
+}
+
+button{
+    background-color: rgba(30,30,30,255);
+    border: 0;
+    cursor: pointer;
+    color: white;
+    display: inline;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 40px;
+    border-bottom: 2px solid #2c0101;
+    width: 100%;
+    margin: 10px;
+    font-family: fbold;
+}
+
+.add-todo-button {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#add-todo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    margin-left: 15px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+select{
+    height: 30px;
+    width: 100%;
+    font-family: fregular;
+    margin-bottom: 20px;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px;
+    border: 1px solid black;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.remove-checklist-item {
+    cursor: pointer;
+} 
+
+
+.display-li {
+    cursor: pointer;
+}
+
+.remove-todo-button {
+    grid-row: 6 / 6;
+    background-color: rgb(146, 22, 22);
+    height: 45px;
+    width: 95%;
+
+}
+
+input {
+    height: 25px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 4px;
+    font-family: fregular;
+    padding-left: 10px;
+} 
+
+.reset-button, .submit-button {
+    margin: 10px 10px;
+}
+
+
